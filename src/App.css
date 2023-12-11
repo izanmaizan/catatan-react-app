@@ -1,0 +1,166 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.app {
+  max-width: 1400px;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 0; /* Adjusted padding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Center the content horizontally */
+  align-items: center;
+  top: 0; /* Ensure it's at the top */
+  left: 0px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 10px;
+}
+
+.search-bar input {
+    margin-right: 10px;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 20px; /* Atur nilai sesuai keinginan untuk membuat input menjadi rounded */
+    outline: none; /* Hapus garis fokus saat di-klik */
+}
+
+.note-form {
+  margin-top: 70px; /* Adjusted to make space for fixed navbar */
+  margin-bottom: 20px;
+}
+
+.note-form input,
+textarea,
+button {
+  margin-bottom: 10px;
+}
+
+.note-form input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.note-form button {
+  background-color: #7323ff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.note-form button:hover {
+  background-color: #6125c9;
+}
+
+.note {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.note h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.note p {
+  margin-bottom: 0;
+}
+
+.note button {
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.note button.delete {
+  background-color: #e74c3c; /* Warna merah */
+  color: #fff;
+}
+
+.note button.archive {
+  background-color: #f1c40f; /* Warna kuning */
+  color: #fff;
+}
+
+.note button:hover {
+  filter: brightness(0.8); /* Membuat warna sedikit lebih gelap saat di hover */
+}
+
+.note-list-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Tambahkan margin atas untuk pemisahan yang lebih baik */
+}
+
+.note.active {
+  border-color: #4caf50;
+}
+
+.note-list {
+  flex: 1;
+  margin: 10px;
+}
+
+.note.archived {
+  border-color: #f39c12;
+}
+
+.note-list-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.note-list.active {
+  border-right: 2px solid #4caf50;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.note-list.archived {
+  border-left: 2px solid #f39c12;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.note {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
